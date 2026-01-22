@@ -28,6 +28,13 @@ body {
     margin-top: 15px;
 }
 
+.section-header {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
 /* --- 3. Navigation --- */
 nav {
     margin: 25px auto 0;
@@ -65,6 +72,228 @@ nav a:hover {
 .current-page {
     background-color: #151515;
     color: #fff;
+}
+
+.navigation-seperator {
+    border: none;
+    background-color: #ffffff;
+    height: 1px;
+    border-radius: 0px;
+    margin: 0px auto;
+    max-width: 600px;
+    width: 90%;
+}
+
+/* --- 4. Forms & Inputs --- */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+button[type="submit"]:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+}
+
+/* --- 5. Hero & Profile Section --- */
+.hero {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.profile-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 230px;
+}
+
+/* --- 6. Projects & Links --- */
+.project-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.project-title-link {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color 0.3s;
+}
+
+.project-version {
+    font-size: 1.5rem;
+    color: #aaa;
+    text-align: center;
+}
+
+.project-link {
+    text-align: center;
+    margin-top: 0px;
+}
+
+.project-button {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.2s;
+    margin-top: 5px;
+}
+
+.project-button:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+}
+
+.project-subnav-container {
+    margin-top: 10px;
+}
+
+.project-subnav {
+    margin: 0px auto 0;
+    font-weight: 600;
+    padding: 4px 0;
+    max-width: 800px;
+    width: 90%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+/* --- 7. Email Section --- */
+.email-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.email-button {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.2s;
+}
+
+.email-button:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+}
+
+/* --- 8. Social Buttons --- */
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.social-button {
+    color: var(--text-color);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.social-button:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+
+.github-button    { background-color: #333; }
+.x-button         { background-color: #000; }
+.discord-button   { background-color: #5865F2; }
+.instagram-button { background-color: #E1306C; }
+.tiktok-button    { background-color: #000; }
+
+/* --- 9. Utility Classes --- */
+.float-right {
+    float: right;
+    margin-left: 20px;
+}
+
+.float-left {
+    float: left;
+    margin-right: 20px;
+}
+
+/* --- 10. Media Queries --- */
+@media (max-width: 600px) {
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-picture {
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    nav a {
+        margin: 0;
+        padding: 8px 12px;
+        font-size: 14px;
+    }
 }
 
 /* --- 4. Icons --- */
