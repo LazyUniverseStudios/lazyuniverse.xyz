@@ -183,6 +183,22 @@ button[type="submit"]:hover {
 }
 
 .project-subnav {
+    margin-top: 0px;
+    margin: 0px auto 0;
+    font-weight: 600;
+    padding: 4px 0;
+    max-width: 800px;
+    width: 90%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+/* --- 7. Branches Section --- */
+.branches-subnav {
+    margin-top: 0px;
     margin: 0px auto 0;
     font-weight: 600;
     padding: 4px 0;
@@ -295,7 +311,6 @@ button[type="submit"]:hover {
         font-size: 14px;
     }
 }
-
 /* --- 4. Icons --- */
 .mdi--minecraft {
   display: inline-block;
