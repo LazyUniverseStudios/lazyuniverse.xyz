@@ -2,6 +2,8 @@
 :root {
     --primary-color: #444;
     --bg-color: #050505;
+    --sidebar-bg-color: #101010;
+    --container-bg-color: #151515;
     --text-color: #f4f7f6;
 }
 
@@ -17,7 +19,7 @@ body {
 .container {
     max-width: 800px;
     width: 90%;
-    background: #151515;
+    background: var(--container-bg-color);
     padding: 40px;
     margin: 20px auto;
     border-radius: 12px;
@@ -57,13 +59,25 @@ nav {
     top: 0;
     width: 200px;
     height: 100%;
-    background-color: #111;
+    background-color: var(--sidebar-bg-color);
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0,0,0,0.1);
 }
 
+.navigation-sidebar-topper {
+    height : 70px
+}
+
+.navigation-sidebar-logo {
+    height: 90%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
 .navigation-sidebar-container {
-    margin-top: 70px;
+    margin-top: 0px;
 }
 
 /* Main Sidebar Links */
@@ -97,18 +111,8 @@ nav a:hover {
 }
 
 .current-page {
-    background-color: #151515;
+    background-color: #252525;
     color: #fff;
-}
-
-.navigation-seperator {
-    border: none;
-    background-color: #ffffff;
-    height: 1px;
-    border-radius: 0px;
-    margin: 0px auto;
-    max-width: 600px;
-    width: 90%;
 }
 
 /* --- 4. Forms & Inputs --- */
