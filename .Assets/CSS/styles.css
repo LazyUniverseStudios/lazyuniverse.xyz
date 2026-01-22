@@ -1,4 +1,3 @@
-/* --- 1. Variables & Root --- */
 :root {
     --primary-color: #444;
     --bg-color: #050505;
@@ -7,7 +6,6 @@
     --text-color: #f4f7f6;
 }
 
-/* --- 2. Base Styles & Global Layout --- */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
@@ -37,7 +35,6 @@ body {
     text-align: center;
 }
 
-/* --- 3. Navigation --- */
 nav {
     margin: 25px auto 0;
     margin-top: 25px;
@@ -80,16 +77,14 @@ nav {
     margin-top: 0px;
 }
 
-/* Main Sidebar Links */
 .navigation-sidebar-tier1 {
     padding-left: 15px;
     font-weight: bold;
 }
 
-/* Sub-links (Minecraft/Roblox) */
 .navigation-sidebar-tier2 {
-    padding-left: 35px; /* Indents them to show they belong to Branches */
-    font-size: 0.9em;    /* Makes them slightly smaller */
+    padding-left: 35px;
+    font-size: 0.9em;
 }
 
 nav a {
@@ -115,7 +110,6 @@ nav a:hover {
     color: #fff;
 }
 
-/* --- 4. Forms & Inputs --- */
 form {
     display: flex;
     flex-direction: column;
@@ -148,7 +142,6 @@ button[type="submit"]:hover {
     filter: brightness(1.1);
 }
 
-/* --- 5. Hero & Profile Section --- */
 .hero {
     display: flex;
     align-items: flex-start;
@@ -163,7 +156,6 @@ button[type="submit"]:hover {
     margin-left: 230px;
 }
 
-/* --- 6. Projects & Links --- */
 .project-title {
     font-size: 2rem;
     font-weight: bold;
@@ -227,7 +219,6 @@ button[type="submit"]:hover {
     gap: 8px;
 }
 
-/* --- 7. Branches Section --- */
 .branches-subnav {
     margin-top: 0px;
     margin: 0px auto 0;
@@ -242,7 +233,6 @@ button[type="submit"]:hover {
     gap: 8px;
 }
 
-/* --- 7. Email Section --- */
 .email-link {
     text-align: center;
     margin-top: 20px;
@@ -268,7 +258,6 @@ button[type="submit"]:hover {
     filter: brightness(1.1);
 }
 
-/* --- 8. Social Buttons --- */
 .social-links {
     display: flex;
     flex-wrap: wrap;
@@ -301,7 +290,6 @@ button[type="submit"]:hover {
 .instagram-button { background-color: #E1306C; }
 .tiktok-button    { background-color: #000; }
 
-/* --- 9. Utility Classes --- */
 .float-right {
     float: right;
     margin-left: 20px;
@@ -312,7 +300,6 @@ button[type="submit"]:hover {
     margin-right: 20px;
 }
 
-/* --- 10. Media Queries --- */
 @media (max-width: 600px) {
     .hero {
         flex-direction: column;
@@ -333,6 +320,6 @@ button[type="submit"]:hover {
         display: none;
     }
     .navigation-sidebar {
-        width: 100%; /* Sidebar takes full screen on mobile when open */
+        width: 100%;
     }
 }
