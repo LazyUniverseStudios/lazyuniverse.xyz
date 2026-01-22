@@ -51,6 +51,33 @@ nav {
     gap: 10px;
 }
 
+.navigation-sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #111;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.navigation-sidebar-container {
+    margin-top: 70px;
+}
+
+/* Main Sidebar Links */
+.navigation-sidebar-tier1 {
+    padding-left: 15px;
+    font-weight: bold;
+}
+
+/* Sub-links (Minecraft/Roblox) */
+.navigation-sidebar-tier2 {
+    padding-left: 35px; /* Indents them to show they belong to Branches */
+    font-size: 0.9em;    /* Makes them slightly smaller */
+}
+
 nav a {
     text-decoration: none;
     color: var(--text-color);
@@ -298,16 +325,10 @@ button[type="submit"]:hover {
         max-width: 100%;
     }
     
-    nav {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 6px;
+    .navigation-header {
+        display: none;
     }
-
-    nav a {
-        margin: 0;
-        padding: 8px 12px;
-        font-size: 14px;
+    .navigation-sidebar {
+        width: 100%; /* Sidebar takes full screen on mobile when open */
     }
 }
